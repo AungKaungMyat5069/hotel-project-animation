@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    transition: 0.3s;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+
+
+.navbar-collapse{
+   justify-content: flex-end;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-item {
+    
+    margin: 0 10px;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+
+.fa-sun, .fa-moon {
+    z-index: 1;
+    padding: 0px 5px;
+}
+
+
+.light-mode, .dark-mode .nav-item:hover, hr {
+    background-color: white;
+    color: black;
+}
+
+
+
+.light-mode .line {
+    background-color: black;
+}
+
+.dark-mode .line{
+    background-color: white;
+}
+
+nav div .line {
+   width: 40px;
+   height: 4px;
+   margin: 5px 5px;
+   border-radius: 4px;
+}
+
+.line1, .line3, .line2 {
+    transition: all 0.9s ease;
+}
+
+.hide-line {
+    opacity: 0;
+}
+
+.deg45 {
+    transform: rotate(45deg) translate(4px, 9px);
+}
+
+.deg175 {
+    transform: rotate(-45deg) translate(4px, -9px);
+}
+
+.side-bar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-bar-nav a {
+    text-decoration: none;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem 2rem; 
+}
+
+.fa-xmark, .side-bar-nav a, .offcanvas  {
+    background-color: #212529;
+    color: whitesmoke; 
+}
+
+.side-bar:hover{
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); 
+}
+
+.toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+    background-color: #343A40;
+    border-radius: 1rem;
+}
+
+.select-background-mode {
+    position: absolute;
+    background-color: whitesmoke;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-top: 2px;
+    transition: 0.5s;
+}
+
+.select-dark-mode {
+    transform: translateX(128%);
+}
+
+#toggle1, #toggle2 {
+    display: none;
+}
+
+.dark-mode, .light-mode .nav-item:hover{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .fa-moon, .light-mode .fa-sun{
+    color: black;
+}
+
+.light-mode .fa-moon, .dark-mode .fa-sun, .light-mode .nav-item:hover{
+    color: whitesmoke;
+}
+
+.container {
+    top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.banner .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.9s;
+}
+
+.banner .bg-1 {
+    background-image: url("images/0.png");
+}
+.banner .bg-2 {
+    background-image: url("images/1.png");
+}
+.banner .bg-3 {
+    background-image: url("images/2.png");
+}
+.banner .bg-4 {
+    background-image: url("images/3.png");
+}
+.banner .bg-5 {
+    background-image: url("images/4.png");
+}
+.banner .bg-6 {
+    background-image: url("images/5.png");
+}
+.banner .bg-7 {
+    background-image: url("images/6.png");
+}
+.banner .bg-8 {
+    background-image: url("images/7.png");
+}
+.banner .bg-9 {
+    background-image: url("images/8.png");
+}
+
+.banner h1 {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 6rem;
+    transition: 0.5s
+}
+
+@media screen and (max-width: 48rem) {
+    .banner h1 {
+        font-size: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
